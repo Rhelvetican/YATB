@@ -1,3 +1,5 @@
+extern crate teloxide;
+
+
 fn main() {
-    println!("Hello, world!");
 }
