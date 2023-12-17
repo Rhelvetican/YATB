@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "YATB-Beta",
+            "cargo": {
+                "args": ["build", "--bin=yatb", "--package=yatb"],
+                "filter": {
+                    "name": "yatb",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_BACKTRACE": "full",
+                "RUST_LOG": "DEBUG"
+            }
+        }
+    ]
+}
